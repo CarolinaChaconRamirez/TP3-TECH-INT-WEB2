@@ -7,37 +7,37 @@
   "background_color": "#d77996", 
   "icons": [
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "48x48",
       "src": "/TP3-TECH-INT-WEB2/img/maskable_icon_x48.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "72x72",
       "src": "/TP3-TECH-INT-WEB2/img/maskable_icon_x72.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "96x96",
       "src": "/TP3-TECH-INT-WEB2/img/maskable_icon_x96.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "128x128",
       "src": "/TP3-TECH-INT-WEB2/img/maskable_icon_x128.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "192x192",
       "src": "/TP3-TECH-INT-WEB2/img/maskable_icon_x192.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "512x512",
       "src": "/TP3-TECH-INT-WEB2/img/maskable_icon_x512.png",
       "type": "image/png"
@@ -50,4 +50,13 @@
       "url": "https://carolinachaconramirez.github.io/TP3-TECH-INT-WEB2/index.html"
     }
   ]
+  "screenshots": [
+  {
+    "src": "/TP3-TECH-INT-WEB2/img/apercu.png",
+    "sizes": "1280x720",
+    "type": "image/png",
+    "form_factor": "wide"
+  }
+ 
+]
 }
