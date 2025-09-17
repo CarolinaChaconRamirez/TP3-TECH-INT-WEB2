@@ -2,7 +2,7 @@
   "name": "Portfolio de Carolina",
   "short_name": "Portfolio",
    "id": "/TP3-TECH-INT-WEB2/?utm_source=web_app_manifest",
-  "start_url": "/index.html",
+  "start_url": "https://carolinachaconramirez.github.io/TP3-TECH-INT-WEB2/index.html",
   "display": "standalone",
   "background_color": "#d77996", 
   "icons": [
