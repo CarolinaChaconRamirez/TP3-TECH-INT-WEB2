@@ -1,6 +1,6 @@
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
-'offline.html',
+// 'offline.html',
 'index.html',
 'projet.html',
 'contact.html'
