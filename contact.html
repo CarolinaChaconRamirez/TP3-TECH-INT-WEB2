@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Carolina</title>
+    <link rel="stylesheet" href="style/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
+
+      <nav>
+        <ul class="flex justify-end gap-4">
+          <li>
+            <a href="index.html"> À propos</a>
+          </li>
+          <li>
+            <a href="projet.html">Projets</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- form -->
+     <div class="bg-white px-6 py-12 sm:py-24 lg:px-8">
+  <div class="mx-auto max-w-xl flex flex-col items-center justify-center text-center">
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">Contactez moi</h1>
+    <p class="mt-3 text-lg text-gray-600">Un projet en tete? Veuillez remplir ce formulaire.</p>
+  </div>
+  <form class="mx-auto mt-16 max-w-xl sm:mt-20">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <div>
+        <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Prenom</label>
+        <div class="mt-2.5">
+          <input required="" type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="Your First Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div>
+        <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Nom</label>
+        <div class="mt-2.5">
+          <input required="" type="text" name="last-name" id="last-name" autocomplete="family-name" placeholder="Your Last Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Votre compagnie</label>
+        <div class="mt-2.5">
+          <input required="" type="text" name="company" id="company" autocomplete="organization" placeholder="Your Company Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+        <div class="mt-2.5">
+          <input required="" type="email" name="email" id="email" autocomplete="email" placeholder="Your Email Address" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="phone" class="block text-sm font-semibold leading-6 text-gray-900">Numero de telephone</label>
+        <div class="mt-2.5">
+          <input required="" type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Your Phone Number" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+        <div class="mt-2.5">
+          <textarea name="message" id="message" rows="4" placeholder="Share your thoughts..." class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10">
+      <button type="submit" class="bg-blue-600 text-white rounded-sm py-2 w-full block">Soumettre</button>
+    </div>
+  </form>
+</div>
+<!-- https://tailwindflex.com/@mereani/contact-us-form-5 -->
+
+     <!-- <div class="conteneurForm"> -->
+     <!-- <form action="" method="post">
+  <div>
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" />
+  </div>
+
+  <div>
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" />
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" />
+  </div>
+
+  <div>
+    <label for="tel">Téléphone</label>
+    <input type="tel" id="tel" name="tel" />
+  </div>
+
+  <div>
+    <label for="adresse">Adresse</label>
+    <input type="text" id="adresse" name="adresse" />
+  </div>
+
+  <div>
+    <label for="ville">Ville</label>
+    <input type="text" id="ville" name="ville" />
+  </div>
+
+  <div>
+    <label for="province">Province</label>
+    <input type="text" id="province" name="province" />
+  </div>
+
+  <div>
+    <label for="postal">Code Postal</label>
+    <input type="text" id="postal" name="postal" />
+  </div>
+
+  <div>
+    <button type="submit">Envoyer</button>
+  </div>
+</form> -->
+</div>
+   
+   <footer class="flex flex-col space-y-10 justify-center ">
+
+    <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
+        <a class="hover:text-pink-300" href="#">À propos</a>
+        <a class="hover:text-pink-300" href="#">Projets</a>
+        <a class="hover:text-pink-300" href="#">Contact</a>
+       
+    </nav>
+
+    <div class="flex justify-center space-x-5">
+       
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF" />
+        </a>
+            <img src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF" />
+        </a>
+    </div>
+    <p class="text-center text-white font-medium">&copy; 2025 Tous droits reservés.</p>
+</footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</html>

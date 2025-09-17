@@ -1,29 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Carolina</title>
-    <link rel="stylesheet" href="style/scss/style.scss">
-</head>
-<body>
+    <link rel="stylesheet" href="style/css/style.css" />
+  </head>
+  <body>
     <header>
-        <img src="img/logo.png" alt="Logo de Carolina Chacon Ramirez">
+      <img src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
 
-        <nav>
-            <ul>
-                <li>
-                 <a href="index.html"> À propos</a>
-                </li>
-                 <li>
-                 <a href="projet.html">Projets</a>
-                </li>
-                 <li>
-                 <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="flex justify-end gap-4">
+          <li>
+            <a href="index.html"> À propos</a>
+          </li>
+          <li>
+            <a href="projet.html">Projets</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <main>
+      <section class="contenuPrincipal">
+        <h1 class="contenuPrincipal__titre order-1">Bonjour!</h1>
+
+        <div class="flex flex-row gap-5">
+          <img
+            class="contenuPrincipal__img"
+            src="img/carolina.png"
+            alt="photo de Carolina avec son chat"
+          />
+          <p class="contenuPrincipal__p">
+            Je m’appelle Carolina Chacon Ramirez et je suis graphiste à
+            Montréal, actuellement étudiante en développement web front-end. Ma
+            passion pour le design visuel m’a menée vers le graphisme, un
+            domaine où je peux donner forme à des idées, créer des identités
+            fortes et travailler sur des projets visuellement impactants. En
+            parallèle, je me forme au développement web pour enrichir mes
+            compétences et concevoir des projets complets, à la fois esthétiques
+            et fonctionnels. Mon approche repose sur la créativité, le souci du
+            détail et une réelle envie de comprendre les besoins des gens pour
+            leur proposer des solutions adaptées.
+          </p>
+        </div>
+
+          <div class="flex flex-row gap-5 pt-10">
+          <img
+            class="contenuPrincipal__img"
+            src="img/choco-mango.png"
+            alt="photo de Carolina avec son chat"
+          />
+          <p class="contenuPrincipal__p">
+            J’ai déjà réalisé plusieurs
+            projets graphiques, allant de la conception d’identités visuelles
+            jusqu’à la mise en page et la création de contenus numériques. Avec
+            le développement front-end, je découvre de nouveaux outils pour
+            transformer ces visuels en expériences interactives et accessibles.
+            Ce portfolio regroupe une sélection de mes projets. Ils reflètent à
+            la fois mon univers créatif et mon envie constante d’apprendre et
+            d’évoluer. Si vous avez un projet en tête, que ce soit en design ou
+            en web, je serais ravie d’en discuter avec vous. Collaborons
+            ensemble pour créer quelque chose qui allie esthétique et
+            efficacité.
+          </p>
+        </div>
+      </section>
+      
+      <section class="contenuProjets">
+        <h2 class="contenuProjets__titre">Projets</h2>
+      </section>
     
-</body>
+      <section class="contenuContact">
+        <h2 class="contenuContact__titre">Contact</h2>
+      </section>
+    </main>
+   <footer class="flex flex-col space-y-10 justify-center ">
+
+    <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
+        <a class="hover:text-pink-300" href="#">À propos</a>
+        <a class="hover:text-pink-300" href="#">Projets</a>
+        <a class="hover:text-pink-300" href="#">Contact</a>
+       
+    </nav>
+
+    <div class="flex justify-center space-x-5">
+       
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF" />
+        </a>
+            <img src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF" />
+        </a>
+    </div>
+    <p class="text-center text-white font-medium">&copy; 2025 Tous droits reservés.</p>
+</footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </html>
