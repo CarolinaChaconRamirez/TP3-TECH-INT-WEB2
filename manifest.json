@@ -1,7 +1,8 @@
 {
   "name": "Portfolio de Carolina",
   "short_name": "Portfolio",
-  "start_url": "./?utm_source=web_app_manifest",
+   "id": "/TP3-TECH-INT-WEB2/?utm_source=web_app_manifest",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#d77996", 
   "icons": [
@@ -43,12 +44,10 @@
     }
   ],
   "related_applications": [
+   
     {
-      "platform": "web"
-    },
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched"
+      "platform": "web",
+      "url": "https://carolinachaconramirez.github.io/TP3-TECH-INT-WEB2/index.html"
     }
   ]
 }
