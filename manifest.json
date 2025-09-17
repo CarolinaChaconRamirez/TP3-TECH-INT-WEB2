@@ -37,7 +37,7 @@
       "type": "image/png"
     },
     {
-      "purpose": "any maskable",
+      "purpose": "any",
       "sizes": "512x512",
       "src": "/TP3-TECH-INT-WEB2/img/maskable_icon_x512.png",
       "type": "image/png"
