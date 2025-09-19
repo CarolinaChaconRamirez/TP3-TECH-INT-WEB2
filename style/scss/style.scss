@@ -1,4 +1,10 @@
 $firstColor: black;
+@font-face {
+  font-family: 'Bilona';
+  src: url('/fonts/BilonaMedium-2v6W3.otf') format('opentype');
+  font-weight: 500; // Medium
+  font-style: normal;
+}
 
 
 * {
@@ -10,10 +16,17 @@ body{
 }
 h1,h2,h3{
    font-family: "Playfair Display", serif;
+    font-family: 'Bilona', sans-serif;
 }
 
+h1{
+  font-size: 2.5rem !important;
+}
 h2{
-  font-size: 3rem;
+  font-size: 2rem !important;
+}
+h3{
+  font-size: 1.5rem !important;
 }
 main {
   max-width: 1200px;
@@ -61,7 +74,9 @@ li a {
 //   background-color: pink;
 // }
 
-
+.heroContact{
+  @extend .conteneur
+}
 
 
 
@@ -77,11 +92,11 @@ footer{
       height: 200px;
  
   margin-bottom: 30px;
-  margin-top: 30px;
+ 
   display: flex;
   justify-content: center;
   align-items: center; 
-  background-color: black;
+  background-color: rgb(255, 213, 220);
    
 }
 
