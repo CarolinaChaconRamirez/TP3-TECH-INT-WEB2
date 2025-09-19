@@ -1,4 +1,6 @@
 $firstColor: black;
+
+
 * {
   padding: 0;
   margin: 0;
@@ -9,8 +11,9 @@ body{
 h1,h2,h3{
    font-family: "Playfair Display", serif;
 }
+
 h2{
-  font-size: 2rem;
+  font-size: 3rem;
 }
 main {
   max-width: 1200px;
@@ -26,7 +29,11 @@ header {
 header img {
   width: 130px;
 }
+
 .contenuPrincipal {
+  &__presentation{
+     background-color: rgb(225, 190, 195);
+  }
   &__img {
     width: 300px;
   }
@@ -43,29 +50,20 @@ li a {
   color: white;
 }
 
-.contenuProjets {
-  height: 200px;
-  border: 1px solid black;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  background-color: pink;
-}
-
-.contenuProjets:hover {
-    background-color: rgb(175, 129, 136);
-
- 
-}
+// .contenuProjets {
+//   height: 200px;
+//   border: 1px solid black;
+//   margin-bottom: 30px;
+//   margin-top: 30px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center; 
+//   background-color: pink;
+// }
 
 
 
 
-.contenuContact {
-  @extend .contenuProjets;
-}
 
 footer{
     background-color: black;
@@ -83,7 +81,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center; 
-  background-color: pink;
+  background-color: black;
    
 }
 
