@@ -1,22 +1,19 @@
 $firstColor: black;
-@font-face {
-  font-family: 'Bilona';
-  src: url('/fonts/BilonaMedium-2v6W3.otf') format('opentype');
-  font-weight: 500; // Medium
-  font-style: normal;
-}
+
 
 
 * {
   padding: 0;
   margin: 0;
 }
+p{
+  line-height: 1.6rem;
+}
 body{
   font-family: "Open Sans", sans-serif;
 }
 h1,h2,h3{
-   font-family: "Playfair Display", serif;
-    font-family: 'Bilona', sans-serif;
+  font-family: "DM Serif Text", serif;
 }
 
 h1{
@@ -48,7 +45,10 @@ header img {
      background-color: rgb(225, 190, 195);
   }
   &__img {
-    width: 300px;
+    max-width: 250px;
+    aspect-ratio: 5/5;
+    object-fit: cover;
+
   }
   &__titre {
     font-size: 3.5rem;
@@ -57,6 +57,7 @@ header img {
   &__p{
     max-width: 60ch;
     text-align: justify;
+    align-content: flex-end;
   }
 }
 li a {
@@ -103,26 +104,3 @@ footer{
 
 
 
-
-// input{
-//     display: flex;
-   
-//   border: 1px solid #000;  
-//   padding: 5px;   
-//   margin-top:10px ;  
-//   margin-bottom: 10px;      
-  
-  
- 
-// }
-// form{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-    
-//     align-items: center;
-   
-// }
-// .conteneurForm{
-//     background-color: beige;
-// }
