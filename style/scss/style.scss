@@ -122,7 +122,33 @@ footer{
 
 
 
+.pageProjet{
+  background-color: rgb(252, 227, 238);
+  padding: 10px;
+  border-radius: 10px;
 
+  img{
+    border: 2px solid rgba(122, 50, 101, 0.192);
+  }
+  h2{
+    margin-bottom: 40px;
+  
+    border-bottom: 2px solid rgba(122, 50, 101, 0.192);
+  }
+}
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
 
 
 
