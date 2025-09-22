@@ -1,33 +1,31 @@
-
-
-const form = document.getElementById('form'); 
-const firstName = document.getElementById('prenom');
-const lastName = document.getElementById('nom');
-const email = document.getElementById('email');
-const tel = document.getElementById('phone');
-const message = document.getElementById('message')
+const form = document.getElementById("form");
+const firstName = document.getElementById("prenom");
+const lastName = document.getElementById("nom");
+const email = document.getElementById("email");
+const tel = document.getElementById("phone");
+const message = document.getElementById("message");
 
 const setError = (element, message) => {
   const inputControl = element.parentElement;
-  let errorDisplay = inputControl.querySelector('.errorMessage');
+  let errorDisplay = inputControl.querySelector(".errorMessage");
 
   if (!errorDisplay) {
-    errorDisplay = document.createElement('div'); 
-    errorDisplay.classList.add('errorMessage');
+    errorDisplay = document.createElement("div");
+    errorDisplay.classList.add("errorMessage");
     inputControl.appendChild(errorDisplay);
   }
 
   errorDisplay.innerText = message;
-  inputControl.classList.add('error');
-  inputControl.classList.remove('success');
+  inputControl.classList.add("error");
+  inputControl.classList.remove("success");
 };
 
 const setSuccess = (element) => {
   const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.errorMessage');
-  if (errorDisplay) errorDisplay.innerText = '';
-  inputControl.classList.add('success');
-  inputControl.classList.remove('error');
+  const errorDisplay = inputControl.querySelector(".errorMessage");
+  if (errorDisplay) errorDisplay.innerText = "";
+  inputControl.classList.add("success");
+  inputControl.classList.remove("error");
 };
 
 const validateForm = () => {
@@ -38,32 +36,63 @@ const validateForm = () => {
   const emailValue = email.value.trim();
   const telValue = tel.value.trim();
 
-  if (firstNameValue === '') {
-    setError(firstName, 'Veuillez mettre votre prénom.');
+  let prenomLettres = true;
+
+  for (let i = 0; i < firstNameValue.length; i++) {
+    const lettres = firstNameValue[i];
+    if (!isNaN(lettres) && lettres !== " ") {
+      prenomLettres = false;
+      break;
+    }
+  }
+
+  if (firstNameValue === "") {
+    setError(firstName, "Veuillez mettre votre prénom.");
+    noError = false;
+  } else if (!prenomLettres) {
+    setError(firstName, "Le prénom ne peut pas contenir de chiffres.");
     noError = false;
   } else {
     setSuccess(firstName);
   }
 
-  if (lastNameValue === '') {
-    setError(lastName, 'Veuillez mettre votre nom.');
+  let nomLettres = true;
+
+  for (let i = 0; i < lastNameValue.length; i++) {
+    const lettres = lastNameValue[i];
+    if (!isNaN(lettres) && lettres !== " ") {
+      nomLettres = false;
+      break;
+    }
+  }
+
+  if (lastNameValue === "") {
+    setError(lastName, "Veuillez mettre votre nom.");
+    noError = false;
+  } else if (!nomLettres) {
+    setError(lastName, "Le nom ne peut pas contenir de chiffres.");
     noError = false;
   } else {
     setSuccess(lastName);
   }
 
- if (emailValue === '' || emailValue.length < 6 || !emailValue.includes('@')) {
-  setError(
-    email,
-    'Votre courriel doit être rempli, contenir au moins 6 caractères et un @.'
-  );
-  noError = false;
-} else {
-  setSuccess(email);
-}
+  if (emailValue === "" || emailValue.length < 6 || !emailValue.includes("@")) {
+    setError(
+      email,
+      "Votre courriel doit être rempli, contenir au moins 6 caractères et un @."
+    );
+    noError = false;
+  } else {
+    setSuccess(email);
+  }
 
-  if (telValue === '') {
-    setError(tel, 'Veuillez mettre votre numéro de téléphone.');
+  if (telValue === "") {
+    setError(
+      tel,
+      "Veuillez mettre votre numéro de téléphone [Format: 5145555555]."
+    );
+    noError = false;
+  } else if (isNaN(telValue) || telValue.length !== 10) {
     noError = false;
   } else {
     setSuccess(tel);
@@ -72,6 +101,13 @@ const validateForm = () => {
   return noError;
 };
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (validateForm()) {
+    console.log("Formulaire valide, envoi...");
+    form.submit();
+  } else {
+    console.log("Formulaire invalide");
+  }
 });

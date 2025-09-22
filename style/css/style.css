@@ -79,4 +79,21 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 213, 220);
+}
+
+input:focus {
+  outline: 0;
+}
+
+.success input {
+  border: 2px solid green;
+}
+
+.error input {
+  border: 2px solid rgb(214, 65, 65);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 13px;
 }/*# sourceMappingURL=style.css.map */

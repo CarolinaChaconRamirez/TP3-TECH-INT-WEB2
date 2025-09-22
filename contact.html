@@ -9,7 +9,8 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  </head>
+ <script src="script/script.js" defer></script>
+</head>
   <body>
     <header>
       <img src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
@@ -35,7 +36,7 @@
   </div>
      <div class="bg-white px-10 pb-10">
   <!-- bg-white px-6 py-12 sm:pb-25 lg:px-8 -->
-  <form id="form" class="mx-auto mt-16 max-w-xl sm:mt-20">
+  <form id="form" class="mx-auto mt-16 max-w-xl sm:mt-20 " novalidate>
     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
       <div>
         <label for="prenom" class="block text-sm font-semibold leading-6 text-gray-900">Prenom</label>
@@ -68,7 +69,7 @@
       <div class="sm:col-span-2">
         <label for="phone" class="block text-sm font-semibold leading-6 text-gray-900">Numero de telephone</label>
         <div class="mt-2.5">
-          <input required="" type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Votre numéro de téléphone" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+          <input required="" type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Votre numéro de téléphone"  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
         <div class="errorMessage"></div>
         </div>
       </div>
