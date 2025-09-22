@@ -24,6 +24,30 @@ console.log('Service worker registered.', reg);
     </script>
   </head>
   <body>
+    
+    <div class="animation scale-up-center-normal rotate-90-vertical-fwd-normal  popUp bg-pink-800 text-white flex flex-col text-center justify-center ">
+       <img src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
+       <script>
+        window.addEventListener('DOMContentLoaded', function () {
+  const popUp = document.querySelector('.popUp');
+
+ 
+  const navigationType = performance.getEntriesByType('navigation')[0].type;
+
+  if (navigationType === 'reload') {
+   
+    popUp.classList.add('animation');
+  } else {
+    
+    popUp.classList.remove('animation');
+     popUp.style.display = 'none';
+  }
+});
+
+       </script>
+    <h1> Bonjour!</h1>
+    <p>Bienvenue dans mon portfolio.</p>
+    </div>
      <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
     <header>
      <nav class="flex flex-wrap items-center justify-between p-3 ">
@@ -62,11 +86,13 @@ console.log('Service worker registered.', reg);
 
 
     </header>
+    
     <main id="content" class="grid grid-cols-12 gap-6 ">
+      
       <section class="contenuPrincipal col-span-12 ">
-        <h1 class="contenuPrincipal__titre order-1">Bonjour!</h1>
+        <h1 class="contenuPrincipal__titre order-1">Qui suis-je?</h1>
 
-        <div class="flex flex-row gap-5 flex-wrap .contenuPrincipal__presentation bg-pink-100 p-5 rounded-lg ">
+        <div class="contenuPrincipal__presentation flex flex-row gap-5 flex-wrap .contenuPrincipal__presentation p-5 rounded-lg ">
           <img
             class="contenuPrincipal__img"
             src="img/carolina.png"
@@ -84,9 +110,12 @@ console.log('Service worker registered.', reg);
             détail et une réelle envie de comprendre les besoins pour
             proposer des solutions adaptées.
           </p>
+          
         </div>
+        
+        
 
-          <div class="bg-pink-100 p-5 rounded-lg mt-5 flex flex-row gap-5 pt-10 flex-wrap">
+          <div class="contenuPrincipal__presentation p-5 rounded-lg mt-5 flex flex-row gap-5 pt-10 flex-wrap">
           <img
             class="contenuPrincipal__img"
             src="img/choco-mango.png"
@@ -106,7 +135,7 @@ console.log('Service worker registered.', reg);
             efficacité.
           </p>
         </div>
-         <div class="pt-20">
+         <div class="mt-20 pt-5 contenuPrincipal__bottom">
         <h2>Projets en vedette</h2>
        <div class=" grid grid-cols-3" >
 
