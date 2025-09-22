@@ -3,7 +3,7 @@ const FILES_TO_CACHE = [
   'index.html',
   'projet.html',
   'contact.html',
-  'PROJET-LVER.html'
+  'projetlver.html'
 ];
 
 self.addEventListener('install', (evt) => {
