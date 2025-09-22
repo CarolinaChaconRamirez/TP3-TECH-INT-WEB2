@@ -2,7 +2,8 @@ const CACHE_NAME = 'static-cache-v2';
 const FILES_TO_CACHE = [
   'index.html',
   'projet.html',
-  'contact.html'
+  'contact.html',
+  'PROJET-LVER.html'
 ];
 
 self.addEventListener('install', (evt) => {
