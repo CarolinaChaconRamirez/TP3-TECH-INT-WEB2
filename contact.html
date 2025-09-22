@@ -8,51 +8,79 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <script src="script/script.js" defer></script>
   </head>
   <body>
     <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
-    
+
     <header>
-          <nav class="flex flex-wrap items-center justify-between p-3 ">
-    <a href="index.html">
-           <img class="logo" src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
+      <nav class="flex flex-wrap items-center justify-between p-3">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/logo.png"
+            alt="Logo de Carolina Chacon Ramirez"
+          />
         </a>
-    <div class="flex md:hidden">
-        <button id="hamburger">
-          <img class="toggle block" src="https://img.icons8.com/?size=40&id=8113&format=png&color=FFFFFF"/>
-          <img class="toggle hidden" src="img/icons8-close-50.png" width="40" height="40" />
-        </button>
-    </div>
-    <div
-        class=" scale-up-ver-top-normal toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-pink-900 md:border-none">
-        <a href="index.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Accueil
-        </a>
-        <a href="projet.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Projets
-        </a>
-        <a href="contact.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Contact
-        </a>
-        
-    </div>
-   
-</nav>
-<script>
-    document.getElementById("hamburger").onclick = function toggleMenu() {
-        const navToggle = document.getElementsByClassName("toggle");
-        for (let i = 0; i < navToggle.length; i++) {
-          navToggle.item(i).classList.toggle("hidden");
-        }
-      };
-</script>
+        <div class="flex md:hidden">
+          <button id="hamburger">
+            <img
+              class="toggle block"
+              src="https://img.icons8.com/?size=40&id=8113&format=png&color=FFFFFF"
+              alt="ouvrir le menu"
+            />
+            <img
+              class="toggle hidden"
+              src="img/icons8-close-50.png"
+              alt="fermer le menu"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
+        <div
+          class="scale-up-ver-top-normal toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-pink-900 md:border-none"
+        >
+          <a
+            href="index.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Accueil
+          </a>
+          <a
+            href="projet.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Projets
+          </a>
+          <a
+            href="contact.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Contact
+          </a>
+        </div>
+      </nav>
+      <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+          const navToggle = document.getElementsByClassName("toggle");
+          for (let i = 0; i < navToggle.length; i++) {
+            navToggle.item(i).classList.toggle("hidden");
+          }
+        };
+      </script>
     </header>
 
-    <div class="flex flex-col items-center justify-center text-center heroContact">
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">Contactez moi</h1>
-      <p class="mt-3 text-lg text-gray-600">Un projet en tete? Veuillez remplir ce formulaire.</p>
+    <div
+      class="flex flex-col items-center justify-center text-center heroContact"
+    >
+      <h1 class="text-4xl md:text-5xl tracking-tight text-gray-900">
+        Contactez moi
+      </h1>
+      <p class="mt-3 text-lg text-gray-600">
+        Un projet en tete? Veuillez remplir ce formulaire.
+      </p>
     </div>
 
     <div class="bg-white px-10 pb-10">
@@ -60,49 +88,124 @@
         <form id="form" class="mx-auto mt-16 max-w-xl sm:mt-20" novalidate>
           <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
-              <label for="prenom" class="block text-sm font-semibold leading-6 text-gray-900">Prenom</label>
+              <label
+                for="prenom"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Prenom</label
+              >
               <div class="mt-2.5">
-                <input required type="text" name="prenom" id="prenom" autocomplete="prenom" placeholder="Votre Prénom" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                <input
+                  required
+                  type="text"
+                  name="prenom"
+                  id="prenom"
+                  autocomplete="name"
+                  placeholder="Votre Prénom"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                />
                 <div class="errorMessage"></div>
               </div>
             </div>
             <div>
-              <label for="nom" class="block text-sm font-semibold leading-6 text-gray-900">Nom</label>
+              <label
+                for="nom"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Nom</label
+              >
               <div class="mt-2.5">
-                <input required type="text" name="nom" id="nom" autocomplete="nom" placeholder="Votre nom" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                <input
+                  required
+                  type="text"
+                  name="nom"
+                  id="nom"
+                  autocomplete="given-name"
+                  placeholder="Votre nom"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                />
                 <div class="errorMessage"></div>
               </div>
             </div>
             <div class="sm:col-span-2">
-              <label for="compagnie" class="block text-sm font-semibold leading-6 text-gray-900">Votre compagnie</label>
+              <label
+                for="compagnie"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Votre compagnie</label
+              >
               <div class="mt-2.5">
-                <input required type="text" name="compagnie" id="compagnie" autocomplete="organisation" placeholder="Votre compagnie" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                <input
+                  required
+                  type="text"
+                  name="compagnie"
+                  id="compagnie"
+                  autocomplete="name"
+                  placeholder="Votre compagnie"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                />
                 <div class="errorMessage"></div>
               </div>
             </div>
             <div class="sm:col-span-2">
-              <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+              <label
+                for="email"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Email</label
+              >
               <div class="mt-2.5">
-                <input required type="email" name="email" id="email" autocomplete="email" placeholder="Votre email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  placeholder="Votre email"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                />
                 <div class="errorMessage"></div>
               </div>
             </div>
             <div class="sm:col-span-2">
-              <label for="phone" class="block text-sm font-semibold leading-6 text-gray-900">Numero de telephone</label>
+              <label
+                for="phone"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Numero de telephone</label
+              >
               <div class="mt-2.5">
-                <input required type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Votre numéro de téléphone" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                <input
+                  required
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  autocomplete="tel"
+                  placeholder="Votre numéro de téléphone"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                />
                 <div class="errorMessage"></div>
               </div>
             </div>
             <div class="sm:col-span-2">
-              <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+              <label
+                for="message"
+                class="block text-sm font-semibold leading-6 text-gray-900"
+                >Message</label
+              >
               <div class="mt-2.5">
-                <textarea name="message" id="message" rows="4" placeholder="Message" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Message"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                ></textarea>
               </div>
             </div>
           </div>
           <div class="mt-10">
-            <button type="submit" class="bg-pink-800 text-white rounded-sm py-2 w-full block">Soumettre</button>
+            <button
+              type="submit"
+              class="bg-pink-800 text-white rounded-sm py-2 w-full block"
+            >
+              Soumettre
+            </button>
           </div>
         </form>
       </main>
@@ -110,24 +213,43 @@
 
     <footer class="flex flex-col space-y-10 justify-center">
       <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
-        <a class="hover:text-pink-300" href="#">À propos</a>
-        <a class="hover:text-pink-300" href="#">Projets</a>
-        <a class="hover:text-pink-300" href="#">Contact</a>
+        <a class="hover:text-pink-300" href="index.html">À propos</a>
+        <a class="hover:text-pink-300" href="projet.html">Projets</a>
+        <a class="hover:text-pink-300" href="contact.html">Contact</a>
       </nav>
 
       <div class="flex justify-center space-x-5">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF" />
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF"
+            alt="icone pour linkedin"
+          />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF" />
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF"
+            alt="icone pour instagram"
+          />
         </a>
-        <a href="#">
-          <img src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF" />
+        <a href="https://x.com/">
+          <img
+            src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF"
+            alt="icone pour x ou twitter"
+          />
         </a>
       </div>
 
-      <p class="text-center text-white font-medium">&copy; 2025 Tous droits reservés.</p>
+      <p class="text-center text-white font-medium">
+        &copy; 2025 Tous droits reservés.
+      </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>

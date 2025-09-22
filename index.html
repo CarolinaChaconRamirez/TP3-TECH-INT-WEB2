@@ -4,98 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Carolina</title>
-    
-  <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/css/style.css" />
-    <link rel="manifest" href="manifest.json">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <script>
       // Register service worker.
-if ('serviceWorker' in navigator) {
-window.addEventListener('load', () => {
-navigator.serviceWorker.register('service-worker.js')
-.then((reg) => {
-console.log('Service worker registered.', reg);
-});
-});
-}
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker registered.", reg);
+          });
+        });
+      }
     </script>
   </head>
   <body>
-    
-    <div class="animation scale-up-center-normal rotate-90-vertical-fwd-normal  popUp bg-pink-800 text-white flex flex-col text-center justify-center ">
-       <img src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
-       <script>
-        window.addEventListener('DOMContentLoaded', function () {
-  const popUp = document.querySelector('.popUp');
-
- 
-  const navigationType = performance.getEntriesByType('navigation')[0].type;
-
-  if (navigationType === 'reload') {
-   
-    popUp.classList.add('animation');
-  } else {
-    
-    popUp.classList.remove('animation');
-     popUp.style.display = 'none';
-  }
-});
-
-       </script>
-    <h1> Bonjour!</h1>
-    <p>Bienvenue dans mon portfolio.</p>
-    </div>
-     <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
-    <header>
-     <nav class="flex flex-wrap items-center justify-between p-3 ">
-    <a href="index.html">
-           <img class="logo" src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
-        </a>
-    <div class="flex md:hidden">
-        <button id="hamburger">
-          <img class="toggle block" src="https://img.icons8.com/?size=40&id=8113&format=png&color=FFFFFF"/>
-          <img class="toggle hidden" src="img/icons8-close-50.png" width="40" height="40" />
-        </button>
-    </div>
     <div
-        class=" scale-up-ver-top-normal  toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-pink-900 md:border-none ">
-        <a href="index.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Accueil
+      class="animation scale-up-center-normal rotate-90-vertical-fwd-normal popUp bg-pink-800 text-white flex flex-col text-center justify-center"
+    >
+      <img src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          const popUp = document.querySelector(".popUp");
+
+          const navigationType =
+            performance.getEntriesByType("navigation")[0].type;
+
+          if (navigationType === "reload") {
+            popUp.classList.add("animation");
+          } else {
+            popUp.classList.remove("animation");
+            popUp.style.display = "none";
+          }
+        });
+      </script>
+      <h1>Bonjour!</h1>
+      <p>Bienvenue dans mon portfolio.</p>
+    </div>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+    <header>
+      <nav class="flex flex-wrap items-center justify-between p-3">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/logo.png"
+            alt="Logo de Carolina Chacon Ramirez"
+          />
         </a>
-        <a href="projet.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Projets
-        </a>
-        <a href="contact.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Contact
-        </a>
-         <!-- <a href="PROJET-LVER.html"
+        <div class="flex md:hidden">
+          <button id="hamburger">
+            <img
+              class="toggle block"
+              src="https://img.icons8.com/?size=40&id=8113&format=png&color=FFFFFF"
+              alt="ouvrir le menu"
+            />
+            <img
+              class="toggle hidden"
+              src="img/icons8-close-50.png"
+              alt="fermer le menu"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
+        <div
+          class="scale-up-ver-top-normal toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-pink-900 md:border-none"
+        >
+          <a
+            href="index.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Accueil
+          </a>
+          <a
+            href="projet.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Projets
+          </a>
+          <a
+            href="contact.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Contact
+          </a>
+          <!-- <a href="PROJET-LVER.html"
             class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Projet
         </a> -->
-        
-    </div>
-   
-</nav>
-<script>
-    document.getElementById("hamburger").onclick = function toggleMenu() {
-        const navToggle = document.getElementsByClassName("toggle");
-        for (let i = 0; i < navToggle.length; i++) {
-          navToggle.item(i).classList.toggle("hidden");
-        }
-      };
-</script>
-
-
+        </div>
+      </nav>
+      <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+          const navToggle = document.getElementsByClassName("toggle");
+          for (let i = 0; i < navToggle.length; i++) {
+            navToggle.item(i).classList.toggle("hidden");
+          }
+        };
+      </script>
     </header>
-    
-    <main id="content" class="grid grid-cols-12 gap-6 ">
-      
-      <section class="contenuPrincipal col-span-12 ">
+
+    <main id="content" class="grid grid-cols-12 gap-6">
+      <section class="contenuPrincipal col-span-12">
         <h1 class="contenuPrincipal__titre order-1">Qui suis-je?</h1>
 
-        <div class="contenuPrincipal__presentation flex flex-row gap-5 flex-wrap .contenuPrincipal__presentation p-5 rounded-lg ">
+        <div
+          class="contenuPrincipal__presentation flex flex-row gap-5 flex-wrap .contenuPrincipal__presentation p-5 rounded-lg"
+        >
           <img
             class="contenuPrincipal__img"
             src="img/carolina.png"
@@ -110,74 +128,86 @@ console.log('Service worker registered.', reg);
             parallèle, je me forme au développement web pour enrichir mes
             compétences et concevoir des projets complets, à la fois esthétiques
             et fonctionnels. Mon approche repose sur la créativité, le souci du
-            détail et une réelle envie de comprendre les besoins pour
-            proposer des solutions adaptées.
+            détail et une réelle envie de comprendre les besoins pour proposer
+            des solutions adaptées.
           </p>
-          
         </div>
-        
-        
 
-          <div class="contenuPrincipal__presentation p-5 rounded-lg mt-5 flex flex-row gap-5 pt-10 flex-wrap">
+        <div
+          class="contenuPrincipal__presentation p-5 rounded-lg mt-5 flex flex-row gap-5 pt-10 flex-wrap"
+        >
           <img
             class="contenuPrincipal__img"
             src="img/choco-mango.png"
-            alt="photo de Carolina avec son chat"
+            alt="photo de projet choco mango"
           />
           <p class="contenuPrincipal__p">
-            J’ai déjà réalisé plusieurs
-            projets graphiques, allant de la conception d’identités visuelles
-            jusqu’à la mise en page et la création de contenus numériques. Avec
-            le développement front-end, je découvre de nouveaux outils pour
-            transformer ces visuels en expériences interactives et accessibles.
-            Ce portfolio regroupe une sélection de mes projets. Ils reflètent à
-            la fois mon univers créatif et mon envie constante d’apprendre et
-            d’évoluer. Si vous avez un projet en tête, que ce soit en design ou
-            en web, je serais ravie d’en discuter avec vous. Collaborons
-            ensemble pour créer quelque chose qui allie esthétique et
-            efficacité.
+            J’ai déjà réalisé plusieurs projets graphiques, allant de la
+            conception d’identités visuelles jusqu’à la mise en page et la
+            création de contenus numériques. Avec le développement front-end, je
+            découvre de nouveaux outils pour transformer ces visuels en
+            expériences interactives et accessibles. Ce portfolio regroupe une
+            sélection de mes projets. Ils reflètent à la fois mon univers
+            créatif et mon envie constante d’apprendre et d’évoluer. Si vous
+            avez un projet en tête, que ce soit en design ou en web, je serais
+            ravie d’en discuter avec vous. Collaborons ensemble pour créer
+            quelque chose qui allie esthétique et efficacité.
           </p>
         </div>
-         <div class="mt-20 pt-5 contenuPrincipal__bottom">
-        <h2>Projets en vedette</h2>
-       <div class=" grid grid-cols-3" >
-
-  
-    <img src="img/choco-mango.png" alt="emballage, boite de chocolats pour la chocolaterie chocomango. ">
-    <img src="img/rapportannuel.png" alt="Rapport annuel pour la societe du cancer">
-    <img src="img/zenith.png" alt="Projets de packaging ">
-  </div>
-
-
-     </div>
+        <div class="mt-20 pt-5 contenuPrincipal__bottom">
+          <h2 class="pb-5">Projets en vedette</h2>
+          <div class="grid grid-cols-3 gap-3">
+            <img
+              src="img/choco-mango.png"
+              alt="emballage, boite de chocolats pour la chocolaterie chocomango. "
+            />
+            <img
+              src="img/rapportannuel.png"
+              alt="Rapport annuel pour la societe du cancer"
+            />
+            <img src="img/zenith.png" alt="Projets de packaging " />
+          </div>
+        </div>
       </section>
-    
-     
     </main>
-   <footer class="flex flex-col space-y-10 justify-center ">
+    <footer class="flex flex-col space-y-10 justify-center">
+      <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
+        <a class="hover:text-pink-300" href="index.html">À propos</a>
+        <a class="hover:text-pink-300" href="projet.html">Projets</a>
+        <a class="hover:text-pink-300" href="contact.html">Contact</a>
+      </nav>
 
-    <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
-        <a class="hover:text-pink-300" href="#">À propos</a>
-        <a class="hover:text-pink-300" href="#">Projets</a>
-        <a class="hover:text-pink-300" href="#">Contact</a>
-       
-    </nav>
-
-    <div class="flex justify-center space-x-5">
-       
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF" />
+      <div class="flex justify-center space-x-5">
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF"
+            alt="icone de linkedin"
+          />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF" />
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF"
+            alt="icone de instagram"
+          />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF" />
+          <img
+            src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF"
+            alt="icone de twitter"
+          />
         </a>
-    </div>
-    <p class="text-center text-white font-medium">&copy; 2025 Tous droits reservés.</p>
-</footer>
+      </div>
+      <p class="text-center text-white font-medium">
+        &copy; 2025 Tous droits reservés.
+      </p>
+    </footer>
   </body>
-  
-
 </html>

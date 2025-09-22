@@ -17,39 +17,58 @@
   <body>
     <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
     <header>
-          <nav class="flex flex-wrap items-center justify-between p-3 ">
-    <a href="index.html">
-           <img class="logo" src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
+      <nav class="flex flex-wrap items-center justify-between p-3">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/logo.png"
+            alt="Logo de Carolina Chacon Ramirez"
+          />
         </a>
-    <div class="flex md:hidden">
-        <button id="hamburger">
-          <img class="toggle block" src="https://img.icons8.com/?size=40&id=8113&format=png&color=FFFFFF"   />
-          <img class="toggle hidden" src="img/icons8-close-50.png" width="40" height="40" />
-        </button>
-    </div>
-    <div
-        class=" scale-up-ver-top-normal toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-pink-900 md:border-none">
-        <a href="index.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Accueil
-        </a>
-        <a href="projet.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Projets
-        </a>
-        <a href="contact.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Contact
-        </a>
-        
-    </div>
-   
-</nav>
-<script>
-    document.getElementById("hamburger").onclick = function toggleMenu() {
-        const navToggle = document.getElementsByClassName("toggle");
-        for (let i = 0; i < navToggle.length; i++) {
-          navToggle.item(i).classList.toggle("hidden");
-        }
-      };
-</script>
+        <div class="flex md:hidden">
+          <button id="hamburger">
+            <img
+              class="toggle block"
+              src="https://img.icons8.com/?size=40&id=8113&format=png&color=FFFFFF"
+              alt="ouvrir le menu"
+            />
+            <img
+              class="toggle hidden"
+              src="img/icons8-close-50.png"
+              alt="fermer le menu"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
+        <div
+          class="scale-up-ver-top-normal toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-pink-900 md:border-none"
+        >
+          <a
+            href="index.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Accueil
+          </a>
+          <a
+            href="projet.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Projets
+          </a>
+          <a
+            href="contact.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Contact
+          </a>
+        </div>
+      </nav>
+      <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+          const navToggle = document.getElementsByClassName("toggle");
+          for (let i = 0; i < navToggle.length; i++) {
+            navToggle.item(i).classList.toggle("hidden");
+          }
+        };
+      </script>
     </header>
 
     <div class="conteneur">
@@ -75,14 +94,26 @@
         <h2>Format desktop et mobile des bannières</h2>
         <div class="grid grid-cols-12 gap-2">
           <div class="grid col-span-6 gap-2">
-            <img src="img/DSKT-BAN-COTTONPROMO-EN.png" alt="banniere de la vie en rose promo cotton" />
-            <img src="img/DSKT-BAN-FLASHPROMO-EN.png" alt="banniere de la vie en rose flash promo" />
+            <img
+              src="img/DSKT-BAN-COTTONPROMO-EN.png"
+              alt="banniere de la vie en rose promo cotton en desktop"
+            />
+            <img
+              src="img/DSKT-BAN-FLASHPROMO-EN.png"
+              alt="banniere de la vie en rose flash promo en desktop"
+            />
           </div>
           <div class="col-span-3">
-            <img src="img/MOB-BAN-COTTONPROMO-AR.jpg" alt="banniere de la vie en rose PROMO COTTON" />
+            <img
+              src="img/MOB-BAN-COTTONPROMO-AR.jpg"
+              alt="banniere de la vie en rose PROMO cotton pour arabie saoudite en version mobile"
+            />
           </div>
           <div class="col-span-3">
-            <img src="img/MOB-BAN-FLASHPROMO-EN.jpg" alt="banniere de la vie en rose flash promo" />
+            <img
+              src="img/MOB-BAN-FLASHPROMO-EN.jpg"
+              alt="banniere de la vie en rose flash promo en version mobile"
+            />
           </div>
         </div>
       </section>
@@ -91,10 +122,16 @@
         <h2>Pages d'accueil du site web</h2>
         <div class="grid grid-cols-12 gap-3 justify-center md:grid">
           <div class="col-span-5">
-            <img src="img/DSKT-EN-livetext.png" alt="banniere de la vie en rose promo cotton" />
+            <img
+              src="img/DSKT-EN-livetext.png"
+              alt="site complet de la page d'accueil vie en rose promo cotton en desktop "
+            />
           </div>
           <div class="col-span-5">
-            <img src="img/DSKT-EN.png" alt="banniere de la vie en rose promo cotton" />
+            <img
+              src="img/DSKT-EN.png"
+              alt="Page d'accueil la vie en rose version desktop"
+            />
           </div>
         </div>
       </section>
@@ -103,13 +140,22 @@
         <h2>Infolettres</h2>
         <div class="md:grid grid-cols-12 gap-5">
           <div class="grid col-span-3">
-            <img src="img/NL-1-ENG.jpg" alt="banniere de la vie en rose promo cotton" />
+            <img
+              src="img/NL-1-ENG.jpg"
+              alt="visuel d'une infolettre pour la vie en rose"
+            />
           </div>
           <div class="grid col-span-4">
-            <img src="img/NL-1-ENG-suite.jpg" alt="banniere de la vie en rose promo cotton" />
+            <img
+              src="img/NL-1-ENG-suite.jpg"
+              alt="suite du visuel de l'infolettre pour la vie en rose"
+            />
           </div>
           <div class="grid col-span-3">
-            <img src="img/NL-1-ENG-1.jpg" alt="banniere de la vie en rose promo cotton" />
+            <img
+              src="img/NL-1-ENG-1.jpg"
+              alt="Infolettre pour KSA "
+            />
           </div>
         </div>
       </section>
@@ -117,24 +163,43 @@
 
     <footer class="flex flex-col space-y-10 justify-center">
       <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
-        <a class="hover:text-pink-300" href="#">À propos</a>
-        <a class="hover:text-pink-300" href="#">Projets</a>
-        <a class="hover:text-pink-300" href="#">Contact</a>
+        <a class="hover:text-pink-300" href="index.html">À propos</a>
+        <a class="hover:text-pink-300" href="projet.html">Projets</a>
+        <a class="hover:text-pink-300" href="contact.html">Contact</a>
       </nav>
 
       <div class="flex justify-center space-x-5">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF" />
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF"
+            alt="icone de linkedin"
+          />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF" />
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF"
+            alt="icone de instagram"
+          />
         </a>
-        <a href="#">
-          <img src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF" />
+        <a href="https://x.com/">
+          <img
+            src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF"
+            alt="icone de twitter ou x"
+          />
         </a>
       </div>
 
-      <p class="text-center text-white font-medium">&copy; 2025 Tous droits reservés.</p>
+      <p class="text-center text-white font-medium">
+        &copy; 2025 Tous droits reservés.
+      </p>
     </footer>
   </body>
 </html>

@@ -1,123 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Carolina</title>
-     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/css/style.css" />
-     <link rel="manifest" href="manifest.json">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-     <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
     <header>
-          <nav class="flex flex-wrap items-center justify-between p-3 ">
-    <a href="index.html">
-           <img class="logo" src="img/logo.png" alt="Logo de Carolina Chacon Ramirez" />
+      <nav class="flex flex-wrap items-center justify-between p-3">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/logo.png"
+            alt="Logo de Carolina Chacon Ramirez"
+          />
         </a>
-    <div class="flex md:hidden">
-        <button id="hamburger">
-          <img class="toggle block" src="https://img.icons8.com/?size=40&id=8113&format=png&color=FFFFFF"   />
-          <img class="toggle hidden" src="img/icons8-close-50.png" width="40" height="40" />
-        </button>
-    </div>
-    <div
-        class=" scale-up-ver-top-normal toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-pink-900 md:border-none">
-        <a href="index.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Accueil
-        </a>
-        <a href="projet.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Projets
-        </a>
-        <a href="contact.html"
-            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none">Contact
-        </a>
-        
-    </div>
-   
-</nav>
-<script>
-    document.getElementById("hamburger").onclick = function toggleMenu() {
-        const navToggle = document.getElementsByClassName("toggle");
-        for (let i = 0; i < navToggle.length; i++) {
-          navToggle.item(i).classList.toggle("hidden");
-        }
-      };
-</script>
+        <div class="flex md:hidden">
+          <button id="hamburger">
+            <img
+              class="toggle block"
+              src="https://img.icons8.com/?size=40&id=8113&format=png&color=FFFFFF"
+              alt="ouvrir le menu"
+            />
+            <img
+              class="toggle hidden"
+              src="img/icons8-close-50.png"
+              alt="fermer le menu"
+              width="40"
+              height="40"
+
+            />
+          </button>
+        </div>
+        <div
+          class="scale-up-ver-top-normal toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-pink-900 md:border-none"
+        >
+          <a
+            href="index.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Accueil
+          </a>
+          <a
+            href="projet.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Projets
+          </a>
+          <a
+            href="contact.html"
+            class="block md:inline-block text-white hover:text-pink-500 px-3 py-3 border-b-2 border-pink-900 md:border-none"
+            >Contact
+          </a>
+        </div>
+      </nav>
+      <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+          const navToggle = document.getElementsByClassName("toggle");
+          for (let i = 0; i < navToggle.length; i++) {
+            navToggle.item(i).classList.toggle("hidden");
+          }
+        };
+      </script>
     </header>
     <div class="conteneur grid col-span-12">
-        <h1 class="text-3xl conteneur__titre">Mes Projets</h1>
+      <h1 class="text-3xl conteneur__titre">Mes Projets</h1>
     </div>
-  <main id="content">
-    
-    <p class="conteneur__description grid col-span-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit modi vel repudiandae voluptas delectus autem inventore saepe consequatur, obcaecati placeat illo aut quibusdam consequuntur enim illum soluta dicta ratione praesentium!</p>
-<section class="grilleImg grid grid-cols-12 gap-3 ">
-  <div class="col-span-12">
-    <h2> Packaging</h2>
-    </div>
-    <div class="grid col-span-4 gap-2 ">
-    <img class=" shadow-drop-center-normal "  src="img/choco-mango.png" alt="emballage, boite de chocolats pour la chocolaterie chocomango. ">
-   
-    <img class=" shadow-drop-center-normal " src="img/rapportannuel.png" alt="Rapport annuel pour la societe du cancer">
-    <img class=" shadow-drop-center-normal " src="img/zenith.png" alt="Projets de packaging ">
-  
-</div>
+    <main id="content">
+      <p class="conteneur__description grid col-span-12">
+       Voici quelques projets que j’ai réalisés durant mon DEC, à la pige et chez La Vie en Rose. Dans ces projets, j’ai utilisé différentes plateformes, comme Canvas, Figma et la suite Adobe. 
+      </p>
+      <section class="conteneur__grilleImg md:grid grid-cols-12 gap-3">
+        <div class="col-span-12">
+          <h2 class="pt-5 pb-5">Packaging / Publicité / Éditorial</h2>
+        </div>
+        <div class="grid col-span-4 gap-2">
+          <img
+            class="shadow-drop-center-normal"
+            src="img/choco-mango.png"
+            alt="emballage, boite de chocolats pour la chocolaterie chocomango. "
+          />
 
-    <div class="grid col-span-4 gap-2">
-    <img class=" shadow-drop-center-normal "  src="img/PALETAS.png" alt="emballage, boite de chocolats pour la chocolaterie chocomango. ">
-   
-    <img class=" shadow-drop-center-normal " src="img/VIITA.jpg" alt="Rapport annuel pour la societe du cancer">
-    <img class=" shadow-drop-center-normal " src="img/BRAND LAUNCH.jpg" alt="Projets de packaging ">
-  
-</div>
-   
-
+          <img
+            class="shadow-drop-center-normal"
+            src="img/rapportannuel.png"
+            alt="Rapport annuel pour la societe du cancer"
+          />
+          <img
+            class="shadow-drop-center-normal"
+            src="img/zenith.png"
+            alt="Projets de packaging "
+          />
+        </div>
 
         <div class="grid col-span-4 gap-2">
-    <img  class=" shadow-drop-center-normal " src="img/40-LVER.png" alt="emballage, boite de chocolats pour la chocolaterie chocomango. ">
-   
-    <a href="projetlver.html"><img class="shadow-drop-center-normal" src="img/LVER-25F1.png" alt="Rapport annuel pour la societe du cancer"></a>
-    <img class=" shadow-drop-center-normal " src="img/NL.jpg" alt="Projets de packaging ">
-  
-</div>
-    
-</section>
+          <img
+            class="shadow-drop-center-normal"
+            src="img/PALETAS.png"
+            alt="affiche pour la chocolaterie chocomango. "
+          />
 
-  </main>
-  <section class="flex justify-center flex-col text-center pb-20 pt-20">
-    <h2>Un Projets en tête ? 
-    </h2>
-    <p class="mb-5"> Vous pouvez me contacter via cette page</p>
-    <a class="bg-pink-100 rounded-md p-2 mx-auto" href="contact.html"> Contactez</a>
-  </section>
-   <footer class="flex flex-col space-y-10 justify-center ">
+          <img
+            class="shadow-drop-center-normal"
+            src="img/VIITA.jpg"
+            alt="Projet pour la marque Viita"
+          />
+          <img
+            class="shadow-drop-center-normal"
+            src="img/BRANDLAUNCH.jpg"
+            alt="Projet pour la vie en rose aux Philippines"
+          />
+        </div>
 
-    <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
-        <a class="hover:text-pink-300" href="#">À propos</a>
-        <a class="hover:text-pink-300" href="#">Projets</a>
-        <a class="hover:text-pink-300" href="#">Contact</a>
-       
-    </nav>
+        <div class="grid col-span-4 gap-2">
+          <img
+            class="shadow-drop-center-normal"
+            src="img/40-LVER.png"
+            alt="Projet pour les 40 ans de la vie en rose. "
+          />
 
-    <div class="flex justify-center space-x-5">
-       
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF" />
+          <a href="projetlver.html"
+            ><img
+              class="shadow-drop-center-normal"
+              src="img/LVER-25F1.png"
+              alt="Projet pour la collection d'hiver de la vie en rose"
+          /></a>
+          <img
+            class="shadow-drop-center-normal"
+            src="img/NL.jpg"
+            alt="infolettre pour la vie en rose"
+          />
+        </div>
+      </section>
+    </main>
+    <section
+      class="conteneurContact flex justify-center flex-col text-center pb-20 pt-20"
+    >
+      <h2>Un Projet en tête ?</h2>
+      <p class="mb-5">Contactez-moi directement via cette page.</p>
+      <a class="bg-pink-800 text-white rounded-md p-2 mx-auto" href="contact.html">
+        Contactez</a
+      >
+    </section>
+    <footer class="flex flex-col space-y-10 justify-center">
+      <nav class="flex justify-center flex-wrap gap-6 text-white font-medium">
+        <a class="hover:text-pink-300" href="index.html">À propos</a>
+        <a class="hover:text-pink-300" href="projet.html">Projets</a>
+        <a class="hover:text-pink-300" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="flex justify-center space-x-5">
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/?size=25&id=98960&format=png&color=FFFFFF"
+            alt="icones pour linkedin"
+          />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF" />
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/?size=25&id=32292&format=png&color=FFFFFF"
+            alt="icone pour instagram"
+          />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF" />
+          <img
+            src="https://img.icons8.com/?size=25&id=A4DsujzAX4rw&format=png&color=FFFFFF"
+            alt="icone pour twitter"
+          />
         </a>
-    </div>
-    <p class="text-center text-white font-medium">&copy; 2025 Tous droits reservés.</p>
-</footer>
+      </div>
+      <p class="text-center text-white font-medium">
+        &copy; 2025 Tous droits reservés.
+      </p>
+    </footer>
   </body>
- 
 </html>
