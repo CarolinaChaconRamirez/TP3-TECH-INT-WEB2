@@ -216,10 +216,10 @@ input:focus {
   animation: scale-then-fade 3s ease forwards;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 350px) and (max-width: 500px) {
   .popUp {
     top: 20%;
-    left: 15%;
+    left: 5%;
     transform: translate(-50%, -50%);
     max-width: 90%;
     padding: 40px;
